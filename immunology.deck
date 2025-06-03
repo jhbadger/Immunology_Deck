@@ -1,0 +1,831 @@
+{deck}
+version:1
+card:0
+size:[512,342]
+name:"immune_cells.deck"
+
+{card:immune_cells}
+{widgets}
+desc:{"type":"field","size":[400,40],"pos":[52,26],"locked":1,"show":"transparent","style":"plain","value":"Major cell types of the immune system. Click a button below to learn more about each."}
+btn_tcell:{"type":"button","size":[110,22],"pos":[56,80],"script":"immune_cells.0","text":"T cell"}
+btn_bcell:{"type":"button","size":[110,22],"pos":[182,80],"script":"immune_cells.1","text":"B cell"}
+btn_nkcell:{"type":"button","size":[110,22],"pos":[308,80],"script":"immune_cells.2","text":"NK cell"}
+btn_dendritic:{"type":"button","size":[110,22],"pos":[56,110],"script":"immune_cells.3","text":"Dendritic cell"}
+btn_macrophage:{"type":"button","size":[110,22],"pos":[182,110],"script":"immune_cells.4","text":"Macrophage"}
+btn_neutrophil:{"type":"button","size":[110,22],"pos":[308,110],"script":"immune_cells.5","text":"Neutrophil"}
+btn_eosinophil:{"type":"button","size":[110,22],"pos":[56,140],"script":"immune_cells.6","text":"Eosinophil"}
+btn_basophil:{"type":"button","size":[110,22],"pos":[182,140],"script":"immune_cells.7","text":"Basophil"}
+btn_mastcell:{"type":"button","size":[110,22],"pos":[308,140],"script":"immune_cells.8","text":"Mast cell"}
+btn_monocyte:{"type":"button","size":[110,22],"pos":[56,170],"script":"immune_cells.9","text":"Monocyte"}
+btn_plasmacell:{"type":"button","size":[110,22],"pos":[182,170],"script":"immune_cells.10","text":"Plasma cell"}
+btn_memorycell:{"type":"button","size":[110,22],"pos":[308,170],"script":"immune_cells.11","text":"Memory cell"}
+
+{script:immune_cells.0}
+on click do
+  go["T cell"]
+end
+{end}
+
+{script:immune_cells.1}
+on click do
+  go["B cell"]
+end
+{end}
+
+{script:immune_cells.2}
+on click do
+  go["NK cell"]
+end
+{end}
+
+{script:immune_cells.3}
+on click do
+  go["Dendritic cell"]
+end
+{end}
+
+{script:immune_cells.4}
+on click do
+  go["Macrophage"]
+end
+{end}
+
+{script:immune_cells.5}
+on click do
+  go["Neutrophil"]
+end
+{end}
+
+{script:immune_cells.6}
+on click do
+  go["Eosinophil"]
+end
+{end}
+
+{script:immune_cells.7}
+on click do
+  go["Basophil"]
+end
+{end}
+
+{script:immune_cells.8}
+on click do
+  go["Mast cell"]
+end
+{end}
+
+{script:immune_cells.9}
+on click do
+  go["Monocyte"]
+end
+{end}
+
+{script:immune_cells.10}
+on click do
+  go["Plasma cell"]
+end
+{end}
+
+{script:immune_cells.11}
+on click do
+  go["Memory cell"]
+end
+{end}
+
+{card:T cell}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"T cell"}
+desc:{"type":"field","size":[400,60],"pos":[56,60],"locked":1,"value":"T cells (CD4+ helper, CD8+ cytotoxic) are central to adaptive immunity. CD4+ cells coordinate immune responses; CD8+ cells kill infected or cancerous cells."}
+markers:{"type":"field","size":[400,20],"pos":[56,130],"locked":1,"value":"Markers: CD3, CD4 (helper), CD8 (cytotoxic)"}
+origin:{"type":"field","size":[400,20],"pos":[56,155],"locked":1,"value":"Origin: Bone marrow (precursor), matures in thymus"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"T cell.0","text":"Back to Immune Cells"}
+
+{script:T cell.0}
+on click do
+  go["immune_cells"]
+end
+{end}
+
+{card:B cell}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"B cell"}
+desc:{"type":"field","size":[400,60],"pos":[56,60],"locked":1,"value":"B cells produce antibodies to neutralize pathogens. Can become plasma or memory cells."}
+markers:{"type":"field","size":[400,20],"pos":[56,130],"locked":1,"value":"Markers: CD19, CD20, CD21, CD22, CD79a"}
+origin:{"type":"field","size":[400,20],"pos":[56,155],"locked":1,"value":"Origin: Bone marrow"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"T cell.0","text":"Back to Immune Cells"}
+
+{card:NK cell}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Natural Killer (NK) cell"}
+desc:{"type":"field","size":[400,60],"pos":[56,60],"locked":1,"value":"NK cells are innate lymphocytes that kill virus-infected and tumor cells without prior sensitization."}
+markers:{"type":"field","size":[400,20],"pos":[56,130],"locked":1,"value":"Markers: CD16, CD56 (no CD3)"}
+origin:{"type":"field","size":[400,20],"pos":[56,155],"locked":1,"value":"Origin: Bone marrow"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"T cell.0","text":"Back to Immune Cells"}
+
+{card:Dendritic cell}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Dendritic cell"}
+desc:{"type":"field","size":[400,60],"pos":[56,60],"locked":1,"value":"Antigen-presenting cells that activate T cells and initiate adaptive immunity."}
+markers:{"type":"field","size":[400,20],"pos":[56,130],"locked":1,"value":"Markers: CD11c, MHC II, CD80, CD86"}
+origin:{"type":"field","size":[400,20],"pos":[56,155],"locked":1,"value":"Origin: Bone marrow"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"T cell.0","text":"Back to Immune Cells"}
+
+{card:Macrophage}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Macrophage"}
+desc:{"type":"field","size":[400,60],"pos":[56,60],"locked":1,"value":"Large phagocytes that engulf pathogens, present antigens, and produce cytokines."}
+markers:{"type":"field","size":[400,20],"pos":[56,130],"locked":1,"value":"Markers: CD14, CD68, MHC II"}
+origin:{"type":"field","size":[400,20],"pos":[56,155],"locked":1,"value":"Origin: Bone marrow (monocytes in blood, mature in tissues)"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"T cell.0","text":"Back to Immune Cells"}
+
+{card:Neutrophil}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Neutrophil"}
+desc:{"type":"field","size":[400,60],"pos":[56,60],"locked":1,"value":"Most abundant white blood cells, first responders to infection, strong phagocytes."}
+markers:{"type":"field","size":[400,20],"pos":[56,130],"locked":1,"value":"Markers: CD15, CD16, CD66b"}
+origin:{"type":"field","size":[400,20],"pos":[56,155],"locked":1,"value":"Origin: Bone marrow"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"T cell.0","text":"Back to Immune Cells"}
+
+{card:Eosinophil}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Eosinophil"}
+desc:{"type":"field","size":[400,60],"pos":[56,60],"locked":1,"value":"Defend against parasites and involved in allergy and asthma."}
+markers:{"type":"field","size":[400,20],"pos":[56,130],"locked":1,"value":"Markers: CD9, CD125, Siglec-8"}
+origin:{"type":"field","size":[400,20],"pos":[56,155],"locked":1,"value":"Origin: Bone marrow"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"T cell.0","text":"Back to Immune Cells"}
+
+{card:Basophil}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Basophil"}
+desc:{"type":"field","size":[400,60],"pos":[56,60],"locked":1,"value":"Release histamine and mediators in allergic responses and inflammation."}
+markers:{"type":"field","size":[400,20],"pos":[56,130],"locked":1,"value":"Markers: CD123, CD203c, Fc�RI"}
+origin:{"type":"field","size":[400,20],"pos":[56,155],"locked":1,"value":"Origin: Bone marrow"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"T cell.0","text":"Back to Immune Cells"}
+
+{card:Mast cell}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Mast cell"}
+desc:{"type":"field","size":[400,60],"pos":[56,60],"locked":1,"value":"Release histamine and other mediators; key effector in allergic reactions."}
+markers:{"type":"field","size":[400,20],"pos":[56,130],"locked":1,"value":"Markers: CD117 (c-Kit), Fc�RI, tryptase"}
+origin:{"type":"field","size":[400,20],"pos":[56,155],"locked":1,"value":"Origin: Bone marrow (mature in tissues)"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"T cell.0","text":"Back to Immune Cells"}
+
+{card:Monocyte}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Monocyte"}
+desc:{"type":"field","size":[400,60],"pos":[56,60],"locked":1,"value":"Circulating precursors to macrophages and dendritic cells; phagocytic."}
+markers:{"type":"field","size":[400,20],"pos":[56,130],"locked":1,"value":"Markers: CD14, CD16"}
+origin:{"type":"field","size":[400,20],"pos":[56,155],"locked":1,"value":"Origin: Bone marrow"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"T cell.0","text":"Back to Immune Cells"}
+
+{card:Plasma cell}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Plasma cell"}
+desc:{"type":"field","size":[400,60],"pos":[56,60],"locked":1,"value":"Terminally differentiated B cells that secrete large amounts of antibody."}
+markers:{"type":"field","size":[400,20],"pos":[56,130],"locked":1,"value":"Markers: CD38, CD138, loss of CD19"}
+origin:{"type":"field","size":[400,20],"pos":[56,155],"locked":1,"value":"Origin: Bone marrow (from B cells)"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"T cell.0","text":"Back to Immune Cells"}
+
+{card:Memory cell}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Memory cell"}
+desc:{"type":"field","size":[400,60],"pos":[56,60],"locked":1,"value":"Long-lived lymphocytes (T or B) that provide rapid, robust responses upon re-exposure to antigen."}
+markers:{"type":"field","size":[400,20],"pos":[56,130],"locked":1,"value":"Markers: CD27, CD45RO (T); CD27, CD19 (B)"}
+origin:{"type":"field","size":[400,20],"pos":[56,155],"locked":1,"value":"Origin: Derived from activated T or B cells"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"T cell.0","text":"Back to Immune Cells"}
+
+{card:mhc}
+{widgets}
+desc:{"type":"field","size":[400,40],"pos":[52,26],"locked":1,"show":"transparent","style":"plain","value":"Major forms of HLA (human MHC) and MHC homologs in other species. Click a button to learn more."}
+btn_hla1:{"type":"button","size":[120,22],"pos":[56,80],"script":"mhc.0","text":"HLA Class I"}
+btn_hla2:{"type":"button","size":[120,22],"pos":[196,80],"script":"mhc.1","text":"HLA Class II"}
+btn_hla3:{"type":"button","size":[120,22],"pos":[336,80],"script":"mhc.2","text":"HLA Class III"}
+btn_mhc_mouse:{"type":"button","size":[180,22],"pos":[56,120],"script":"mhc.3","text":"Mouse MHC (H-2)"}
+btn_mhc_rat:{"type":"button","size":[180,22],"pos":[256,120],"script":"mhc.4","text":"Rat MHC (RT1)"}
+btn_mhc_chicken:{"type":"button","size":[180,22],"pos":[56,160],"script":"mhc.5","text":"Chicken MHC (B complex)"}
+btn_mhc_fish:{"type":"button","size":[180,22],"pos":[256,160],"script":"mhc.6","text":"Fish MHC"}
+btn_mhc_dog:{"type":"button","size":[180,22],"pos":[56,200],"script":"mhc.7","text":"Dog MHC (DLA)"}
+btn_mhc_cow:{"type":"button","size":[180,22],"pos":[256,200],"script":"mhc.8","text":"Cow MHC (BoLA)"}
+btn_mhc_pig:{"type":"button","size":[180,22],"pos":[56,240],"script":"mhc.9","text":"Pig MHC (SLA)"}
+btn_mhc_horse:{"type":"button","size":[180,22],"pos":[256,240],"script":"mhc.10","text":"Horse MHC (ELA)"}
+
+{script:mhc.0}
+on click do
+  go["HLA Class I"]
+end
+{end}
+
+{script:mhc.1}
+on click do
+  go["HLA Class II"]
+end
+{end}
+
+{script:mhc.2}
+on click do
+  go["HLA Class III"]
+end
+{end}
+
+{script:mhc.3}
+on click do
+  go["H-2"]
+end
+{end}
+
+{script:mhc.4}
+on click do
+  go["RT1"]
+end
+{end}
+
+{script:mhc.5}
+on click do
+  go["B complex"]
+end
+{end}
+
+{script:mhc.6}
+on click do
+  go["Fish MHC"]
+end
+{end}
+
+{script:mhc.7}
+on click do
+  go["DLA"]
+end
+{end}
+
+{script:mhc.8}
+on click do
+  go["BoLA"]
+end
+{end}
+
+{script:mhc.9}
+on click do
+  go["SLA"]
+end
+{end}
+
+{script:mhc.10}
+on click do
+  go["ELA"]
+end
+{end}
+
+{card:HLA Class I}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"HLA Class I"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"HLA Class I molecules (HLA-A, HLA-B, HLA-C) are present on nearly all nucleated cells. They present endogenous peptides (e.g., from viruses) to CD8+ T cells, crucial for cytotoxic immune responses."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"HLA Class I.0","text":"Back to MHC"}
+
+{script:HLA Class I.0}
+on click do
+  go["mhc"]
+end
+{end}
+
+{card:HLA Class II}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"HLA Class II"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"HLA Class II molecules (HLA-DR, HLA-DQ, HLA-DP) are primarily on antigen-presenting cells. They present exogenous peptides to CD4+ T helper cells and are vital for adaptive immunity."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"HLA Class I.0","text":"Back to MHC"}
+
+{card:HLA Class III}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"HLA Class III"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"HLA Class III region encodes various immune-related proteins, such as complement components (C2, C4, factor B) and cytokines, but not classical antigen-presenting molecules."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"HLA Class I.0","text":"Back to MHC"}
+
+{card:H-2}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Mouse MHC (H-2)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"The mouse MHC is the H-2 complex, with class I (H-2K, H-2D, H-2L), class II (I-A, I-E), and class III regions, analogous to human HLA. Widely used in immunology research."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"HLA Class I.0","text":"Back to MHC"}
+
+{card:RT1}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Rat MHC (RT1)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"The rat MHC is the RT1 complex, with class I, II, and III regions. It is structurally and functionally similar to human and mouse MHC."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"HLA Class I.0","text":"Back to MHC"}
+
+{card:B complex}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Chicken MHC (B complex)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"The chicken MHC (B complex) is compact and strongly influences resistance to infectious diseases. It has both class I and II genes, but fewer than in mammals."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"HLA Class I.0","text":"Back to MHC"}
+
+{card:Fish MHC}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Fish MHC"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"Fish have MHC genes, though their organization and function can differ from mammals. MHC class I and II have been described in many fish species."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"HLA Class I.0","text":"Back to MHC"}
+
+{card:DLA}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Dog MHC (DLA)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"The dog leukocyte antigen (DLA) complex is the canine MHC, homologous to HLA, with class I, II, and III regions. Important in transplantation and disease studies."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"HLA Class I.0","text":"Back to MHC"}
+
+{card:BoLA}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Cow MHC (BoLA)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"The bovine leukocyte antigen (BoLA) complex is the cattle MHC system, involved in immune responses and associated with disease resistance."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"HLA Class I.0","text":"Back to MHC"}
+
+{card:SLA}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Pig MHC (SLA)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"The swine leukocyte antigen (SLA) complex is the pig MHC system, with class I and II genes. Important for studies in xenotransplantation."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"HLA Class I.0","text":"Back to MHC"}
+
+{card:ELA}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Horse MHC (ELA)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"The equine leukocyte antigen (ELA) complex is the horse MHC, homologous to HLA, with class I, II, and III regions."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"HLA Class I.0","text":"Back to MHC"}
+
+{card:IL}
+{widgets}
+desc:{"type":"field","size":[400,40],"pos":[52,26],"locked":1,"script":"IL.0","show":"transparent","style":"plain","value":"Interleukins (ILs) are cytokines crucial for immune system communication. Click a button below to learn more."}
+btn_il1:{"type":"button","size":[60,22],"pos":[56,90],"script":"IL.1","text":"IL-1","style":"rect"}
+btn_il2:{"type":"button","size":[60,22],"pos":[122,90],"script":"IL.2","text":"IL-2","style":"rect"}
+btn_il3:{"type":"button","size":[60,22],"pos":[188,90],"script":"IL.3","text":"IL-3","style":"rect"}
+btn_il4:{"type":"button","size":[60,22],"pos":[254,90],"script":"IL.4","text":"IL-4","style":"rect"}
+btn_il5:{"type":"button","size":[60,22],"pos":[320,90],"script":"IL.5","text":"IL-5","style":"rect"}
+btn_il6:{"type":"button","size":[60,22],"pos":[386,90],"script":"IL.6","text":"IL-6","style":"rect"}
+btn_il7:{"type":"button","size":[60,22],"pos":[56,118],"script":"IL.7","text":"IL-7","style":"rect"}
+btn_il8:{"type":"button","size":[60,22],"pos":[122,118],"script":"IL.8","text":"IL-8","style":"rect"}
+btn_il9:{"type":"button","size":[60,22],"pos":[188,118],"script":"IL.9","text":"IL-9","style":"rect"}
+btn_il10:{"type":"button","size":[60,22],"pos":[254,118],"script":"IL.10","text":"IL-10","style":"rect"}
+btn_il11:{"type":"button","size":[60,22],"pos":[320,118],"script":"IL.11","text":"IL-11","style":"rect"}
+btn_il12:{"type":"button","size":[60,22],"pos":[386,118],"script":"IL.12","text":"IL-12","style":"rect"}
+btn_il13:{"type":"button","size":[60,22],"pos":[56,146],"script":"IL.13","text":"IL-13","style":"rect"}
+btn_il14:{"type":"button","size":[60,22],"pos":[122,146],"script":"IL.14","text":"IL-14","style":"rect"}
+btn_il15:{"type":"button","size":[60,22],"pos":[188,146],"script":"IL.15","text":"IL-15","style":"rect"}
+btn_il16:{"type":"button","size":[60,22],"pos":[254,146],"script":"IL.16","text":"IL-16","style":"rect"}
+btn_il17:{"type":"button","size":[60,22],"pos":[320,146],"script":"IL.17","text":"IL-17","style":"rect"}
+btn_il18:{"type":"button","size":[60,22],"pos":[386,146],"script":"IL.18","text":"IL-18","style":"rect"}
+btn_il19:{"type":"button","size":[60,22],"pos":[56,174],"script":"IL.19","text":"IL-19","style":"rect"}
+btn_il20:{"type":"button","size":[60,22],"pos":[122,174],"script":"IL.20","text":"IL-20","style":"rect"}
+btn_il21:{"type":"button","size":[60,22],"pos":[188,174],"script":"IL.21","text":"IL-21","style":"rect"}
+btn_il22:{"type":"button","size":[60,22],"pos":[254,174],"script":"IL.22","text":"IL-22","style":"rect"}
+btn_il23:{"type":"button","size":[60,22],"pos":[320,174],"script":"IL.23","text":"IL-23","style":"rect"}
+btn_il24:{"type":"button","size":[60,22],"pos":[386,174],"script":"IL.24","text":"IL-24","style":"rect"}
+btn_il25:{"type":"button","size":[60,22],"pos":[56,202],"script":"IL.25","text":"IL-25","style":"rect"}
+btn_il26:{"type":"button","size":[60,22],"pos":[122,202],"script":"IL.26","text":"IL-26","style":"rect"}
+btn_il27:{"type":"button","size":[60,22],"pos":[188,202],"script":"IL.27","text":"IL-27","style":"rect"}
+btn_il28:{"type":"button","size":[60,22],"pos":[254,202],"script":"IL.28","text":"IL-28","style":"rect"}
+btn_il29:{"type":"button","size":[60,22],"pos":[320,202],"script":"IL.29","text":"IL-29","style":"rect"}
+btn_il30:{"type":"button","size":[60,22],"pos":[386,202],"script":"IL.30","text":"IL-30","style":"rect"}
+btn_il31:{"type":"button","size":[60,22],"pos":[56,230],"script":"IL.31","text":"IL-31","style":"rect"}
+btn_il32:{"type":"button","size":[60,22],"pos":[122,230],"script":"IL.32","text":"IL-32","style":"rect"}
+btn_il33:{"type":"button","size":[60,22],"pos":[188,230],"script":"IL.33","text":"IL-33","style":"rect"}
+btn_il34:{"type":"button","size":[60,22],"pos":[254,230],"script":"IL.34","text":"IL-34","style":"rect"}
+btn_il35:{"type":"button","size":[60,22],"pos":[320,230],"script":"IL.35","text":"IL-35","style":"rect"}
+btn_il36:{"type":"button","size":[60,22],"pos":[386,230],"script":"IL.36","text":"IL-36","style":"rect"}
+
+{script:IL.0}
+il.0
+{end}
+
+{script:IL.1}
+on click do
+  go["IL-1" "BoxIn"]
+end
+{end}
+
+{script:IL.2}
+on click do
+  go["IL-2" "BoxIn"]
+end
+{end}
+
+{script:IL.3}
+on click do
+  go["IL-3" "BoxIn"]
+end
+{end}
+
+{script:IL.4}
+on click do
+  go["IL-4" "BoxIn"]
+end
+{end}
+
+{script:IL.5}
+on click do
+  go["IL-5" "BoxIn"]
+end
+{end}
+
+{script:IL.6}
+on click do
+  go["IL-6" "BoxIn"]
+end
+{end}
+
+{script:IL.7}
+on click do
+  go["IL-7" "BoxIn"]
+end
+{end}
+
+{script:IL.8}
+on click do
+  go["IL-8" "BoxIn"]
+end
+{end}
+
+{script:IL.9}
+on click do
+  go["IL-9" "BoxIn"]
+end
+{end}
+
+{script:IL.10}
+on click do
+  go["IL-10" "BoxIn"]
+end
+{end}
+
+{script:IL.11}
+on click do
+  go["IL-11" "BoxIn"]
+end
+{end}
+
+{script:IL.12}
+on click do
+  go["IL-12" "BoxIn"]
+end
+{end}
+
+{script:IL.13}
+on click do
+  go["IL-13" "BoxIn"]
+end
+{end}
+
+{script:IL.14}
+on click do
+  go["IL-14" "BoxIn"]
+end
+{end}
+
+{script:IL.15}
+on click do
+  go["IL-15" "BoxIn"]
+end
+{end}
+
+{script:IL.16}
+on click do
+  go["IL-16" "BoxIn"]
+end
+{end}
+
+{script:IL.17}
+on click do
+  go["IL-17" "BoxIn"]
+end
+{end}
+
+{script:IL.18}
+on click do
+  go["IL-18" "BoxIn"]
+end
+{end}
+
+{script:IL.19}
+on click do
+  go["IL-19" "BoxIn"]
+end
+{end}
+
+{script:IL.20}
+on click do
+  go["IL-20" "BoxIn"]
+end
+{end}
+
+{script:IL.21}
+on click do
+  go["IL-21" "BoxIn"]
+end
+{end}
+
+{script:IL.22}
+on click do
+  go["IL-22" "BoxIn"]
+end
+{end}
+
+{script:IL.23}
+on click do
+  go["IL-23" "BoxIn"]
+end
+{end}
+
+{script:IL.24}
+on click do
+  go["IL-24" "BoxIn"]
+end
+{end}
+
+{script:IL.25}
+on click do
+  go["IL-25" "BoxIn"]
+end
+{end}
+
+{script:IL.26}
+on click do
+  go["IL-26" "BoxIn"]
+end
+{end}
+
+{script:IL.27}
+on click do
+  go["IL-27" "BoxIn"]
+end
+{end}
+
+{script:IL.28}
+on click do
+  go["IL-28" "BoxIn"]
+end
+{end}
+
+{script:IL.29}
+on click do
+  go["IL-29" "BoxIn"]
+end
+{end}
+
+{script:IL.30}
+on click do
+  go["IL-30" "BoxIn"]
+end
+{end}
+
+{script:IL.31}
+on click do
+  go["IL-31" "BoxIn"]
+end
+{end}
+
+{script:IL.32}
+on click do
+  go["IL-32" "BoxIn"]
+end
+{end}
+
+{script:IL.33}
+on click do
+  go["IL-33" "BoxIn"]
+end
+{end}
+
+{script:IL.34}
+on click do
+  go["IL-34" "BoxIn"]
+end
+{end}
+
+{script:IL.35}
+on click do
+  go["IL-35" "BoxIn"]
+end
+{end}
+
+{script:IL.36}
+on click do
+  go["IL-36" "BoxIn"]
+end
+{end}
+
+{card:IL-1}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 1 (IL-1)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-1 is a key pro-inflammatory cytokine produced mainly by activated macrophages. It has two forms: IL-1� and IL-1�. IL-1 plays a central role in immune and inflammatory responses, fever induction, and lymphocyte activation."}
+btn_back:{"type":"button","size":[100,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Main"}
+
+{script:IL-1.0}
+on click do
+  go["IL" "BoxOut"]
+end
+{end}
+
+{card:IL-2}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 2 (IL-2)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-2 is produced by activated T cells. It is essential for T cell proliferation and differentiation, and for maintaining immune tolerance."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-3}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 3 (IL-3)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-3 supports the growth and differentiation of hematopoietic stem cells into all myeloid lineages. Produced by activated T cells."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-4}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 4 (IL-4)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-4 is produced by Th2 cells and mast cells. It induces differentiation of naive T cells into Th2 cells and stimulates B cell proliferation and IgE class switching."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-5}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 5 (IL-5)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-5 is produced by Th2 cells and mast cells. It promotes the growth and activation of eosinophils, important in allergic responses and asthma."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-6}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 6 (IL-6)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-6 is produced by T cells and macrophages. It has both pro- and anti-inflammatory roles, induces fever, and stimulates acute phase protein production."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-7}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 7 (IL-7)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-7 is essential for lymphocyte (B and T cell) development and survival. Produced by stromal cells in bone marrow and thymus."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-8}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 8 (IL-8)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-8 (CXCL8) is a chemokine produced by macrophages and epithelial cells. It attracts neutrophils to sites of infection (chemotaxis)."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-9}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 9 (IL-9)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-9 is produced by Th9 cells. It promotes mast cell growth and is involved in asthma and allergic inflammation."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-10}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 10 (IL-10)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-10 is an anti-inflammatory cytokine produced by Treg, Th2, and macrophages. It inhibits the expression of pro-inflammatory cytokines."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-11}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 11 (IL-11)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-11 is involved in hematopoiesis and stimulates the production of platelets. Produced by stromal cells in bone marrow."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-12}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 12 (IL-12)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-12 is produced by dendritic cells and macrophages. It stimulates the differentiation of naive T cells into Th1 cells and enhances cytotoxic activity of NK and T cells."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-13}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 13 (IL-13)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-13 is produced by Th2 cells. It regulates inflammatory responses, especially in allergy and asthma, and promotes IgE production."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-14}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 14 (IL-14)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-14 is expressed in lymphoid tissues and is involved in B cell growth and regulation."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-15}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 15 (IL-15)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-15 is important for the development, survival, and activation of NK and memory CD8+ T cells."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-16}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 16 (IL-16)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-16 is a chemoattractant for CD4+ cells and regulates T cell activation."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-17}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 17 (IL-17)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-17 family members (A-F) are pro-inflammatory cytokines produced by Th17 cells, important in neutrophil recruitment and host defense."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-18}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 18 (IL-18)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-18 is structurally similar to IL-1 and induces IFN-� production, enhancing Th1 responses and innate immunity."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-19}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 19 (IL-19)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-19 is produced by monocytes and keratinocytes, and is involved in inflammatory responses in skin and other tissues."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-20}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 20 (IL-20)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-20 is involved in skin inflammation and is produced by keratinocytes and monocytes."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-21}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 21 (IL-21)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-21 is produced by T follicular helper cells and regulates the function of T, B, and NK cells."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-22}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 22 (IL-22)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-22 is produced by Th17 and innate lymphoid cells. It acts mainly on epithelial cells to promote antimicrobial defense and tissue repair."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-23}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 23 (IL-23)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-23 is produced by dendritic cells and macrophages. It is important in the maintenance and expansion of Th17 cells."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-24}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 24 (IL-24)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-24 is part of the IL-10 family, involved in immune responses and has anti-cancer properties."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-25}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 25 (IL-25)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-25 (IL-17E) promotes Th2-type immune responses and is involved in allergy and inflammation."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-26}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 26 (IL-26)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-26 is produced by Th17 cells and is involved in mucosal immunity and chronic inflammation."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-27}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 27 (IL-27)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-27 is produced by antigen-presenting cells and has both pro- and anti-inflammatory properties, regulating T cell responses."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-28}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 28 (IL-28)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-28 (IFN-�2) is involved in antiviral immunity and is similar to interferons."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-29}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 29 (IL-29)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-29 (IFN-�1) is involved in antiviral defenses, especially at mucosal surfaces."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-30}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 30 (IL-30)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-30 (IL-27p28) forms part of the IL-27 complex and regulates immune responses."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-31}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 31 (IL-31)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-31 is produced by Th2 cells and is associated with itching (pruritus) in atopic dermatitis."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-32}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 32 (IL-32)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-32 is produced by T cells and NK cells, and is involved in inflammation, especially in rheumatoid arthritis."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-33}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 33 (IL-33)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-33 is released by damaged cells and promotes Th2 responses, allergy, and eosinophilic inflammation."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-34}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 34 (IL-34)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-34 regulates monocyte survival and differentiation by acting on the CSF-1 receptor."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-35}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 35 (IL-35)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-35 is produced by regulatory T cells and has potent immunosuppressive activity."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+
+{card:IL-36}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleukin 36 (IL-36)"}
+desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-36 family members (IL-36�, �, �) are involved in skin inflammation and play roles in psoriasis and epithelial immunity."}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
+

@@ -4,6 +4,31 @@ card:0
 size:[512,342]
 name:"immune_cells.deck"
 
+{card:home}
+{widgets}
+field1:{"type":"field","size":[269,54],"pos":[128,32],"locked":1,"border":0,"align":"center","value":{"text":["","An Introduction to Immunology\n\nJonathan Badger\nNational Cancer Institute"],"font":["","menu"],"arg":["",""]}}
+cells:{"type":"button","size":[172,20],"pos":[176,96],"script":"home.0","text":"Cells of the Immune System"}
+mhc_button:{"type":"button","size":[268,20],"pos":[112,128],"script":"home.1","text":"Major Histocompatiblity Complex (MHC/HLA)"}
+il_btn:{"type":"button","size":[94,20],"pos":[208,160],"script":"home.2","text":"Interleukins"}
+
+{script:home.0}
+on click do
+  go["immune_cells" "WipeLeft"]
+end
+{end}
+
+{script:home.1}
+on click do
+  go["mhc" "WipeLeft"]
+end
+{end}
+
+{script:home.2}
+on click do
+  go["IL" "WipeLeft"]
+end
+{end}
+
 {card:immune_cells}
 {widgets}
 desc:{"type":"field","size":[400,40],"pos":[52,26],"locked":1,"show":"transparent","style":"plain","value":"Major cell types of the immune system. Click a button below to learn more about each."}
@@ -19,6 +44,7 @@ btn_mastcell:{"type":"button","size":[110,22],"pos":[308,140],"script":"immune_c
 btn_monocyte:{"type":"button","size":[110,22],"pos":[56,170],"script":"immune_cells.9","text":"Monocyte"}
 btn_plasmacell:{"type":"button","size":[110,22],"pos":[182,170],"script":"immune_cells.10","text":"Plasma cell"}
 btn_memorycell:{"type":"button","size":[110,22],"pos":[308,170],"script":"immune_cells.11","text":"Memory cell"}
+home:{"type":"button","size":[60,20],"pos":[208,304],"script":"immune_cells.12","text":"Home"}
 
 {script:immune_cells.0}
 on click do
@@ -89,6 +115,12 @@ end
 {script:immune_cells.11}
 on click do
   go["Memory cell"]
+end
+{end}
+
+{script:immune_cells.12}
+on click do
+  go["First" "BoxOut"]
 end
 {end}
 
@@ -208,6 +240,7 @@ btn_mhc_dog:{"type":"button","size":[180,22],"pos":[56,200],"script":"mhc.7","te
 btn_mhc_cow:{"type":"button","size":[180,22],"pos":[256,200],"script":"mhc.8","text":"Cow MHC (BoLA)"}
 btn_mhc_pig:{"type":"button","size":[180,22],"pos":[56,240],"script":"mhc.9","text":"Pig MHC (SLA)"}
 btn_mhc_horse:{"type":"button","size":[180,22],"pos":[256,240],"script":"mhc.10","text":"Horse MHC (ELA)"}
+home:{"type":"button","size":[60,20],"pos":[208,304],"script":"immune_cells.12","text":"Home"}
 
 {script:mhc.0}
 on click do
@@ -386,6 +419,7 @@ btn_il33:{"type":"button","size":[60,22],"pos":[188,230],"script":"IL.33","text"
 btn_il34:{"type":"button","size":[60,22],"pos":[254,230],"script":"IL.34","text":"IL-34","style":"rect"}
 btn_il35:{"type":"button","size":[60,22],"pos":[320,230],"script":"IL.35","text":"IL-35","style":"rect"}
 btn_il36:{"type":"button","size":[60,22],"pos":[386,230],"script":"IL.36","text":"IL-36","style":"rect"}
+home:{"type":"button","size":[60,20],"pos":[208,304],"script":"immune_cells.12","text":"Home"}
 
 {script:IL.0}
 il.0

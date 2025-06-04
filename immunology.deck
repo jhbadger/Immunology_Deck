@@ -863,3 +863,348 @@ title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interleu
 desc:{"type":"field","size":[400,100],"pos":[56,60],"locked":1,"value":"IL-36 family members (IL-36�, �, �) are involved in skin inflammation and play roles in psoriasis and epithelial immunity."}
 btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IL-1.0","text":"Back to Interleukins"}
 
+{card:antibodies}
+{widgets}
+desc:{"type":"field","size":[400,40],"pos":[56,20],"locked":1,"style":"plain","value":"Major types of antibodies (immunoglobulins). Click a button to learn more about each."}
+btn_iga:{"type":"button","size":[80,24],"pos":[56,80],"script":"antibodies.0","text":"IgA"}
+btn_igd:{"type":"button","size":[80,24],"pos":[146,80],"script":"antibodies.1","text":"IgD"}
+btn_ige:{"type":"button","size":[80,24],"pos":[236,80],"script":"antibodies.2","text":"IgE"}
+btn_igg:{"type":"button","size":[80,24],"pos":[326,80],"script":"antibodies.3","text":"IgG"}
+btn_igm:{"type":"button","size":[80,24],"pos":[416,80],"script":"antibodies.4","text":"IgM"}
+home:{"type":"button","size":[60,20],"pos":[208,304],"script":"immune_cells.12","text":"Home"}
+
+{script:antibodies.0}
+on click do
+  go["IgA"]
+end
+{end}
+
+{script:antibodies.1}
+on click do
+  go["IgD"]
+end
+{end}
+
+{script:antibodies.2}
+on click do
+  go["IgE"]
+end
+{end}
+
+{script:antibodies.3}
+on click do
+  go["IgG"]
+end
+{end}
+
+{script:antibodies.4}
+on click do
+  go["IgM"]
+end
+{end}
+
+{card:IgA}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Immunoglobulin A (IgA)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"value":"� Main antibody in mucosal areas (gut, respiratory tract, saliva, tears, breast milk)\n� Exists as monomer (serum) and dimer (secretory IgA)\n� Provides local protection by neutralizing pathogens and toxins\n� Does not efficiently fix complement\n� 10�15% of serum antibodies\n� Deficiency can result in recurrent mucosal infections"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IgA.0","text":"Back to Antibodies"}
+
+{script:IgA.0}
+on click do
+  go["antibodies"]
+end
+{end}
+
+{card:IgD}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Immunoglobulin D (IgD)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"value":"� Functions mainly as an antigen receptor on naïve B cells\n� Very low concentration in serum (<1%)\n� Role in B cell activation and maturation\n� Exact biological function not fully understood\n� Found mainly on cell surface, not secreted in large amounts"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IgA.0","text":"Back to Antibodies"}
+
+{card:IgE}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Immunoglobulin E (IgE)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"value":"� Binds to Fc receptors on mast cells and basophils\n� Involved in allergic reactions (triggers histamine release)\n� Important for defense against parasites (helminths)\n� Very low concentration in serum (<0.01%)\n� Elevated in allergic diseases (asthma, hay fever, eczema)"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IgA.0","text":"Back to Antibodies"}
+
+{card:IgG}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Immunoglobulin G (IgG)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"value":"� Most abundant antibody in serum (75�80%)\n� Four subclasses (IgG1, IgG2, IgG3, IgG4)\n� Only antibody that crosses the placenta (provides passive immunity to fetus)\n� Efficient at opsonization and complement activation\n� Neutralizes toxins and viruses\n� Longest half-life (~21 days)"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IgA.0","text":"Back to Antibodies"}
+
+{card:IgM}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Immunoglobulin M (IgM)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"value":"� First antibody produced during an immune response\n� Exists as pentamer (serum) or monomer (on B cell surface)\n� Excellent at activating complement\n� Effective at agglutinating pathogens\n� 5�10% of serum antibodies\n� Indicates recent infection when elevated"}
+btn_back:{"type":"button","size":[150,24],"pos":[56,200],"script":"IgA.0","text":"Back to Antibodies"}
+
+{card:cytokines}
+{widgets}
+desc:{"type":"field","size":[400,40],"pos":[56,20],"locked":1,"style":"plain","value":"Major non-interleukin cytokines. Click a button to learn more about each."}
+btn_ifna:{"type":"button","size":[130,24],"pos":[56,80],"script":"cytokines.0","text":"Interferon-alpha (IFN-�)"}
+btn_ifnb:{"type":"button","size":[130,24],"pos":[206,80],"script":"cytokines.1","text":"Interferon-beta (IFN-�)"}
+btn_ifng:{"type":"button","size":[130,24],"pos":[356,80],"script":"cytokines.2","text":"Interferon-gamma (IFN-�)"}
+btn_tnf:{"type":"button","size":[130,24],"pos":[56,120],"script":"cytokines.3","text":"Tumor Necrosis Factor (TNF)"}
+btn_csf:{"type":"button","size":[130,24],"pos":[206,120],"script":"cytokines.4","text":"Colony Stimulating Factors (CSFs)"}
+btn_chemokine:{"type":"button","size":[130,24],"pos":[356,120],"script":"cytokines.5","text":"Chemokines"}
+btn_tgfb:{"type":"button","size":[130,24],"pos":[56,160],"script":"cytokines.6","text":"TGF-beta"}
+btn_lymphotoxin:{"type":"button","size":[130,24],"pos":[206,160],"script":"cytokines.7","text":"Lymphotoxin"}
+btn_others:{"type":"button","size":[130,24],"pos":[356,160],"script":"cytokines.8","text":"Other Cytokines"}
+home:{"type":"button","size":[60,20],"pos":[208,304],"script":"immune_cells.12","text":"Home"}
+
+{script:cytokines.0}
+on click do
+  go["IFN-alpha"]
+end
+{end}
+
+{script:cytokines.1}
+on click do
+  go["IFN-beta"]
+end
+{end}
+
+{script:cytokines.2}
+on click do
+  go["IFN-gamma"]
+end
+{end}
+
+{script:cytokines.3}
+on click do
+  go["TNF"]
+end
+{end}
+
+{script:cytokines.4}
+on click do
+  go["CSF"]
+end
+{end}
+
+{script:cytokines.5}
+on click do
+  go["Chemokine"]
+end
+{end}
+
+{script:cytokines.6}
+on click do
+  go["TGF-beta"]
+end
+{end}
+
+{script:cytokines.7}
+on click do
+  go["Lymphotoxin"]
+end
+{end}
+
+{script:cytokines.8}
+on click do
+  go["Other Cytokines"]
+end
+{end}
+
+{card:IFN-alpha}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interferon-alpha (IFN-�)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"scroll":1,"value":"� Type I interferon (multiple subtypes: IFN-�1, �2, etc.)\n� Produced mainly by plasmacytoid dendritic cells in response to viral infection\n� Induces antiviral state in cells, increases MHC I expression\n� Activates NK cells\n� Used therapeutically for hepatitis B/C, some leukemias"}
+btn_back:{"type":"button","size":[170,24],"pos":[56,200],"script":"IFN-alpha.0","text":"Back to Cytokines"}
+
+{script:IFN-alpha.0}
+on click do
+  go["cytokines"]
+end
+{end}
+
+{card:IFN-beta}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interferon-beta (IFN-�)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"scroll":1,"value":"� Type I interferon\n� Produced by fibroblasts and epithelial cells in response to viral infection\n� Induces antiviral state, increases MHC I expression\n� Used as therapy in multiple sclerosis"}
+btn_back:{"type":"button","size":[170,24],"pos":[56,200],"script":"IFN-alpha.0","text":"Back to Cytokines"}
+
+{card:IFN-gamma}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Interferon-gamma (IFN-�)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"scroll":1,"value":"� Type II interferon (only one subtype)\n� Produced by Th1 T cells, cytotoxic T cells, NK cells\n� Strongly activates macrophages\n� Increases MHC I & II expression\n� Promotes cell-mediated immunity, inhibits Th2 responses"}
+btn_back:{"type":"button","size":[170,24],"pos":[56,200],"script":"IFN-alpha.0","text":"Back to Cytokines"}
+
+{card:TNF}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Tumor Necrosis Factor (TNF)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"scroll":1,"value":"� Prototypical member: TNF-� (also TNF-�/lymphotoxin-�)\n� Produced by macrophages, T cells, NK cells\n� Major mediator of inflammation and septic shock\n� Induces fever, apoptotic cell death, cachexia\n� Targeted by biologic drugs in autoimmune diseases (e.g., rheumatoid arthritis)"}
+btn_back:{"type":"button","size":[170,24],"pos":[56,200],"script":"IFN-alpha.0","text":"Back to Cytokines"}
+
+{card:CSF}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Colony Stimulating Factors (CSFs)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"scroll":1,"value":"� Includes GM-CSF, G-CSF, M-CSF, etc.\n� Stimulate production, differentiation, and function of myeloid lineage cells\n� GM-CSF: Granulocyte-macrophage CSF (monocytes, neutrophils)\n� G-CSF: Granulocyte CSF (neutrophils)\n� M-CSF: Macrophage CSF (macrophages)\n� Used therapeutically to boost neutrophils after chemotherapy"}
+btn_back:{"type":"button","size":[170,24],"pos":[56,200],"script":"IFN-alpha.0","text":"Back to Cytokines"}
+
+{card:Chemokine}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Chemokines"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"scroll":1,"value":"� Family of small cytokines that direct cell migration\n� Four major families: CXC, CC, C, and CX3C chemokines\n� Key in leukocyte chemotaxis (e.g., CXCL8/IL-8 for neutrophils)\n� Involved in inflammation, immune surveillance, and development"}
+btn_back:{"type":"button","size":[170,24],"pos":[56,200],"script":"IFN-alpha.0","text":"Back to Cytokines"}
+
+{card:TGF-beta}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Transforming Growth Factor Beta (TGF-�)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"scroll":1,"value":"� Multifunctional cytokine, three isoforms (TGF-�1, 2, 3)\n� Produced by many cell types\n� Suppresses immune response (immunosuppressive)\n� Critical for tissue repair, fibrosis, and regulation of Treg cells\n� Inhibits activation of macrophages and T cells"}
+btn_back:{"type":"button","size":[170,24],"pos":[56,200],"script":"IFN-alpha.0","text":"Back to Cytokines"}
+
+{card:Lymphotoxin}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Lymphotoxin"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"scroll":1,"value":"� Includes Lymphotoxin-� (LT-�, formerly TNF-�) and LT-�\n� Produced by lymphocytes\n� Involved in lymphoid organ development, cell death\n� Closely related to TNF family"}
+btn_back:{"type":"button","size":[170,24],"pos":[56,200],"script":"IFN-alpha.0","text":"Back to Cytokines"}
+
+{card:Other Cytokines}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Other Cytokines"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"scroll":1,"value":"� IL-12 family: sometimes grouped separately (e.g., IL-12, IL-23, etc.)\n� Adipokines (e.g., leptin, adiponectin) act as cytokines\n� Growth factors (e.g., EGF, FGF, VEGF) have cytokine-like actions\n� Many more with specialized or local functions"}
+btn_back:{"type":"button","size":[170,24],"pos":[56,200],"script":"IFN-alpha.0","text":"Back to Cytokines"}
+
+{card:bio}
+{widgets}
+desc:{"type":"field","size":[400,48],"pos":[56,20],"locked":1,"style":"plain","value":"Famous immunologists from the 19th century to today. Click a name to learn more."}
+btn_pasteur:{"type":"button","size":[120,24],"pos":[56,80],"script":"bio.0","text":"Louis Pasteur"}
+btn_metchnikoff:{"type":"button","size":[120,24],"pos":[196,80],"script":"bio.1","text":"Élie Metchnikoff"}
+btn_ehrlich:{"type":"button","size":[120,24],"pos":[336,80],"script":"bio.2","text":"Paul Ehrlich"}
+btn_burnet:{"type":"button","size":[120,24],"pos":[56,120],"script":"bio.3","text":"Frank M. Burnet"}
+btn_porter:{"type":"button","size":[120,24],"pos":[196,120],"script":"bio.4","text":"Rodney Porter"}
+btn_tonegawa:{"type":"button","size":[120,24],"pos":[336,120],"script":"bio.5","text":"Susumu Tonegawa"}
+btn_hoffmann:{"type":"button","size":[120,24],"pos":[56,160],"script":"bio.6","text":"Jules Hoffmann"}
+btn_steinman:{"type":"button","size":[120,24],"pos":[196,160],"script":"bio.7","text":"Ralph Steinman"}
+btn_nussenzweig:{"type":"button","size":[120,24],"pos":[336,160],"script":"bio.8","text":"Michel Nussenzweig"}
+btn_future:{"type":"button","size":[120,24],"pos":[196,200],"script":"bio.9","text":"*****"}
+home:{"type":"button","size":[60,20],"pos":[208,304],"script":"immune_cells.12","text":"Home"}
+
+{script:bio.0}
+on click do
+  go["Pasteur"]
+end
+{end}
+
+{script:bio.1}
+on click do
+  go["Metchnikoff"]
+end
+{end}
+
+{script:bio.2}
+on click do
+  go["Ehrlich"]
+end
+{end}
+
+{script:bio.3}
+on click do
+  go["Burnet"]
+end
+{end}
+
+{script:bio.4}
+on click do
+  go["Porter"]
+end
+{end}
+
+{script:bio.5}
+on click do
+  go["Tonegawa"]
+end
+{end}
+
+{script:bio.6}
+on click do
+  go["Hoffmann"]
+end
+{end}
+
+{script:bio.7}
+on click do
+  go["Steinman"]
+end
+{end}
+
+{script:bio.8}
+on click do
+  go["Nussenzweig"]
+end
+{end}
+
+{script:bio.9}
+on click do
+  go["Future"]
+end
+{end}
+
+{card:Pasteur}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Louis Pasteur (1822-1895)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"value":"French chemist and microbiologist. Pioneered the germ theory of disease, developed vaccines for rabies and anthrax, and invented pasteurization. His vaccine work laid the foundation for immunology."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"Pasteur.0","text":"Back to Bios"}
+
+{script:Pasteur.0}
+on click do
+  go["bio"]
+end
+{end}
+
+{card:Metchnikoff}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Élie Metchnikoff (1845-1916)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"value":"Russian zoologist and Nobel laureate. Discovered phagocytosis and identified phagocytes as key players in innate immunity. Shared the 1908 Nobel Prize with Ehrlich."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"Pasteur.0","text":"Back to Bios"}
+
+{card:Ehrlich}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Paul Ehrlich (1854-1915)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"scroll":1,"value":"German physician and Nobel laureate. Developed the side-chain theory of antibody formation, introduced the concept of selective toxicity, and created the first effective treatment for syphilis. Shared the 1908 Nobel Prize with Metchnikoff."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"Pasteur.0","text":"Back to Bios"}
+
+{card:Burnet}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Frank Macfarlane Burnet (1899-1985)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"value":"Australian virologist and immunologist. Developed the clonal selection theory of antibody formation, explaining immune specificity. Nobel Prize in 1960."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"Pasteur.0","text":"Back to Bios"}
+
+{card:Porter}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Rodney Porter (1917-1985)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"value":"British biochemist. Elucidated the structure of antibodies (immunoglobulins), showing they are composed of heavy and light chains. Nobel Prize in 1972 (shared with Edelman)."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"Pasteur.0","text":"Back to Bios"}
+
+{card:Tonegawa}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Susumu Tonegawa (b. 1939)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"scroll":1,"value":"Japanese molecular biologist. Discovered the genetic mechanism for antibody diversity (V(D)J recombination). Nobel Prize in 1987."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"Pasteur.0","text":"Back to Bios"}
+
+{card:Hoffmann}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Jules Hoffmann (b. 1941)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"scroll":1,"value":"French immunologist. Discovered key mechanisms of innate immunity, especially Toll-like receptors in Drosophila. Nobel Prize in 2011 (shared with Beutler and Steinman)."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"Pasteur.0","text":"Back to Bios"}
+
+{card:Steinman}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Ralph Steinman (1943-2011)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"value":"Canadian immunologist. Discovered dendritic cells, crucial for antigen presentation and adaptive immunity. Nobel Prize in 2011 (posthumous)."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"Pasteur.0","text":"Back to Bios"}
+
+{card:Nussenzweig}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"Michel Nussenzweig (b. 1955)"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"value":"Brazilian-American immunologist. Known for discoveries in B cell biology, antibody affinity maturation, and development of broadly neutralizing antibodies to HIV."}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"Pasteur.0","text":"Back to Bios"}
+
+{card:Future}
+{widgets}
+title:{"type":"field","size":[400,30],"pos":[56,20],"locked":1,"value":"*****"}
+desc:{"type":"field","size":[400,110],"pos":[56,60],"locked":1,"value":"A place for a new generation of immunologists�add your own future star here!"}
+btn_back:{"type":"button","size":[120,24],"pos":[56,200],"script":"Pasteur.0","text":"Back to Bios"}
+
